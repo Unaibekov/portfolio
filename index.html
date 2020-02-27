@@ -1,192 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik:300,400,900&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
 
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,900&display=swap&subset=cyrillic"
+		rel="stylesheet" />
 
-  <body>
-    <div class="preloader" id="preloader">
-      <div class="cssload-dots">
-        <div class="cssload-dot"></div>
-        <div class="cssload-dot"></div>
-        <div class="cssload-dot"></div>
-        <div class="cssload-dot"></div>
-        <div class="cssload-dot"></div>
-      </div>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
+</head>
 
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              result="blur"
-              stdDeviation="12"
-            ></feGaussianBlur>
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7"
-              result="goo"
-            ></feColorMatrix>
-            <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
-          </filter>
-        </defs>
-      </svg>
-    </div>
-    <a href="#top" id="top"><span></span></a>
-    <!-- <a href="#top" class="top"></a> -->
-    <main id="top" class="main">
-      <div class="photo"></div>
-      <div class="about">
-        <div class="title">Ильдар<br />Унайбеков</div>
-        <div class="divider"></div>
-        <div class="subtitle">Графический дизайнер</div>
-        <a href="#portfolio" class="button">Мои работы</a>
-      </div>
-    </main>
-    <div id="portfolio" class="m-p-g">
-      <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-        <img
-          src="img/tagras.jpg"
-          data-full="img/tagras.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/vitrajidiscount.jpg"
-          data-full="img/vitrajidiscount.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/erra.jpg"
-          data-full="img/erra.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/errabox.jpg"
-          data-full="img/errabox.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/devgold.jpg"
-          data-full="img/devgold.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/neftcard.jpg"
-          data-full="img/neftcard.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/devinfinite.jpg"
-          data-full="img/devinfinite.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/devclassic.jpg"
-          data-full="img/devclassic.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/devmir.jpg"
-          data-full="img/devmir.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/devcard.jpg"
-          data-full="img/devcard.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/vleto.jpg"
-          data-full="img/vleto.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/devdiscount.jpg"
-          data-full="img/devdiscount.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/tanki.jpg"
-          data-full="img/tanki.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/vitrazhimenu.jpg"
-          data-full="img/vitrazhimenu.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/vitrazhicupon.jpg"
-          data-full="img/vitrazhicupon.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/23insta-500x500.jpg"
-          data-full="img/23insta-1000x1000.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/vitrazhioldyear.jpg"
-          data-full="img/vitrazhioldyear.jpg"
-          class="m-p-g__thumbs-img"
-        />
-        <img
-          src="img/sbiten.jpg"
-          data-full="img/sbiten.jpg"
-          class="m-p-g__thumbs-img"
-        />
-      </div>
-      <div class="m-p-g__fullscreen"></div>
-    </div>
-    <script>
-      var mybutton = document.getElementById("top");
+<body>
+	<div class="preloader" id="preloader">
+		<div class="cssload-dots">
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+		</div>
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction();
-      };
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="goo">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12"></feGaussianBlur>
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7"
+						result="goo"></feColorMatrix>
+					<!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	<a href="#top" id="top"><span></span></a>
+	<a href="#tabs" id="down"><span></span>Мои работы</a>
+	<main id="top" class="main">
+		<div class="photo-block">
+			<div class="photo-bg"></div>
+			<img src="img/photo.jpg" class="my-photo">
+		</div>
+		<div class="about-block">
+			<div>
+				<div class="title">Ильдар<br />Унайбеков</div>
+				<div class="divider"></div>
+				<div class="subtitle">Графический дизайнер</div>
+			</div>
+		</div>
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 500 ||
-          document.documentElement.scrollTop > 500
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
+	</main>
+		<!-- Tab links -->
+		<div class="tabs" id="tabs">
+			<button class="tablinks active" data-country="London">
+				<p data-title="London">Полиграфия</p>
+			</button>
+			<button class="tablinks" data-country="Paris">
+				<p data-title="Paris">Web-design</p>
+			</button>
+		</div>
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+		<!-- Tab content -->
+		<div id="London" class="tabcontent active">
+			<div id="portfolio" class="m-p-g">
+				<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+					<img src="img/tagras.jpg" data-full="img/tagras.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/vitrajidiscount.jpg" data-full="img/vitrajidiscount.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/erra.jpg" data-full="img/erra.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/errabox.jpg" data-full="img/errabox.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/devgold.jpg" data-full="img/devgold.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/neftcard.jpg" data-full="img/neftcard.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/devinfinite.jpg" data-full="img/devinfinite.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/devclassic.jpg" data-full="img/devclassic.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/devmir.jpg" data-full="img/devmir.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/devcard.jpg" data-full="img/devcard.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/vleto.jpg" data-full="img/vleto.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/devdiscount.jpg" data-full="img/devdiscount.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/tanki.jpg" data-full="img/tanki.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/vitrazhimenu.jpg" data-full="img/vitrazhimenu.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/vitrazhicupon.jpg" data-full="img/vitrazhicupon.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/23insta-500x500.jpg" data-full="img/23insta-1000x1000.jpg"
+						class="m-p-g__thumbs-img" />
+					<img src="img/vitrazhioldyear.jpg" data-full="img/vitrazhioldyear.jpg" class="m-p-g__thumbs-img" />
+					<img src="img/sbiten.jpg" data-full="img/sbiten.jpg" class="m-p-g__thumbs-img" />
+				</div>
+				<div class="m-p-g__fullscreen"></div>
+			</div>
+		</div>
 
-      window.onload = () => {
-        let preloader = document.getElementById("preloader");
-        preloader.style.display = "none";
-      };
+		<div id="Paris" class="tabcontent">
+		</div>
 
-      var elem = document.querySelector(".m-p-g");
+	<script src="js/script.js"></script>
+</body>
 
-      document.addEventListener("DOMContentLoaded", function() {
-        var gallery = new MaterialPhotoGallery(elem);
-      });
-    </script>
-  </body>
 </html>
