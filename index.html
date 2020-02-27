@@ -1,76 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,400,900&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,900&display=swap&subset=cyrillic"
-		rel="stylesheet">
-		
-		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
-</head>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
+  </head>
 
-<body>
-	<main class="main">
-		<div class="photo"></div>
-		<div class="about">
-			<div class="title">Ильдар<br>Унайбеков</div>
-			<div class="divider"></div>
-			<div class="subtitle">Графический дизайнер</div>
-		</div>
-	</main>
-	<div class="m-p-g">
-		<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-			<!-- <img src="http://unsplash.it/600/400?image=940" data-full="http://unsplash.it/1200/800?image=940"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/640/450?image=906" data-full="http://unsplash.it/1280/900?image=906"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/550/420?image=885" data-full="http://unsplash.it/1100/840?image=885"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/650/450?image=823" data-full="http://unsplash.it/1300/900?image=823"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/600/350?image=815" data-full="http://unsplash.it/1200/700?image=815"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/560/500?image=677" data-full="http://unsplash.it/1120/1000?image=677"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/670/410?image=401" data-full="http://unsplash.it/1340/820?image=401"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/620/340?image=623" data-full="http://unsplash.it/1240/680?image=623"
-				class="m-p-g__thumbs-img" />
-			<img src="http://unsplash.it/790/390?image=339" data-full="http://unsplash.it/1580/780?image=339"
-				class="m-p-g__thumbs-img" /> -->
-			<img src="img/tagras.jpg"  data-full="img/tagras.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/vitrajidiscount.jpg" data-full="img/vitrajidiscount.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/erra.jpg" data-full="img/erra.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/errabox.jpg" data-full="img/errabox.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/devgold.jpg" data-full="img/devgold.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/neftcard.jpg" data-full="img/neftcard.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/devinfinite.jpg" data-full="img/devinfinite.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/devclassic.jpg" data-full="img/devclassic.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/devmir.jpg" data-full="img/devmir.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/devcard.jpg" data-full="img/devcard.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/vleto.jpg" data-full="img/vleto.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/devdiscount.jpg" data-full="img/devdiscount.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/tanki.jpg" data-full="img/tanki.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/vitrazhimenu.jpg" data-full="img/vitrazhimenu.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/vitrazhicupon.jpg" data-full="img/vitrazhicupon.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/23insta-500x500.jpg" data-full="img/23insta-1000x1000.jpg" class="m-p-g__thumbs-img" />
-			<!-- <img src="img/vitrazhioldyear.jpg" data-full="img/vitrazhioldyear.jpg" class="m-p-g__thumbs-img" />
-			<img src="img/sbiten.jpg" data-full="img/sbiten.jpg" class="m-p-g__thumbs-img" /> -->
-		</div>
-		<div class="m-p-g__fullscreen"></div>
-	</div>
-	<script>
-		var elem = document.querySelector('.m-p-g');
+  <body>
+    <div class="preloader" id="preloader">
+      <div class="cssload-dots">
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+        <div class="cssload-dot"></div>
+      </div>
 
-		document.addEventListener('DOMContentLoaded', function () {
-			var gallery = new MaterialPhotoGallery(elem);
-		});
-	</script>
-	
-</body>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              result="blur"
+              stdDeviation="12"
+            ></feGaussianBlur>
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7"
+              result="goo"
+            ></feColorMatrix>
+            <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <main class="main">
+      <div class="photo"></div>
+      <div class="about">
+        <div class="title">Ильдар<br />Унайбеков</div>
+        <div class="divider"></div>
+        <div class="subtitle">Графический дизайнер</div>
+      </div>
+    </main>
+    <div class="m-p-g">
+      <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+        <img
+          src="img/tagras.jpg"
+          data-full="img/tagras.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/vitrajidiscount.jpg"
+          data-full="img/vitrajidiscount.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/erra.jpg"
+          data-full="img/erra.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/errabox.jpg"
+          data-full="img/errabox.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/devgold.jpg"
+          data-full="img/devgold.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/neftcard.jpg"
+          data-full="img/neftcard.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/devinfinite.jpg"
+          data-full="img/devinfinite.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/devclassic.jpg"
+          data-full="img/devclassic.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/devmir.jpg"
+          data-full="img/devmir.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/devcard.jpg"
+          data-full="img/devcard.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/vleto.jpg"
+          data-full="img/vleto.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/devdiscount.jpg"
+          data-full="img/devdiscount.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/tanki.jpg"
+          data-full="img/tanki.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/vitrazhimenu.jpg"
+          data-full="img/vitrazhimenu.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/vitrazhicupon.jpg"
+          data-full="img/vitrazhicupon.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/23insta-500x500.jpg"
+          data-full="img/23insta-1000x1000.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/vitrazhioldyear.jpg"
+          data-full="img/vitrazhioldyear.jpg"
+          class="m-p-g__thumbs-img"
+        />
+        <img
+          src="img/sbiten.jpg"
+          data-full="img/sbiten.jpg"
+          class="m-p-g__thumbs-img"
+        />
+      </div>
+      <div class="m-p-g__fullscreen"></div>
+    </div>
+    <script>
+      window.onload = () => {
+        let preloader = document.getElementById("preloader");
+        preloader.style.display = "none";
+      };
 
+      var elem = document.querySelector(".m-p-g");
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var gallery = new MaterialPhotoGallery(elem);
+      });
+    </script>
+  </body>
 </html>
