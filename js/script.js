@@ -1,8 +1,18 @@
 var mybutton = document.getElementById("top");
-
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
 	scrollFunction();
+	myFunction();
+};
+
+var header = document.getElementById("tabs");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 };
 
 function scrollFunction() {
@@ -14,51 +24,44 @@ function scrollFunction() {
 	} else {
 		mybutton.style.display = "none";
 	}
-}
+};
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-}
+	document.body.scrollTop = 10;
+	document.documentElement.scrollTop = 10;
+};
 
 
-
+// PRELOADER
 window.onload = () => {
 	let preloader = document.getElementById("preloader");
 	preloader.style.display = "none";
 };
 
 
-
+// GALLERY
 var elem = document.querySelector(".m-p-g");
-
 document.addEventListener("DOMContentLoaded", function () {
 	var gallery = new MaterialPhotoGallery(elem);
 });
 
 
-
+// TABS
 var tabLinks = document.querySelectorAll(".tablinks");
 var tabContent = document.querySelectorAll(".tabcontent");
-
 tabLinks.forEach(function (el) {
 	el.addEventListener("click", openTabs);
 });
-
 function openTabs(el) {
 	var btnTarget = el.currentTarget;
-	var country = btnTarget.dataset.country;
-
+	var work = btnTarget.dataset.work;
 	tabContent.forEach(function (el) {
 		el.classList.remove("active");
 	});
-
 	tabLinks.forEach(function (el) {
 		el.classList.remove("active");
 	});
-
-	document.querySelector("#" + country).classList.add("active");
-
+	document.querySelector("#" + work).classList.add("active");
 	btnTarget.classList.add("active");
-}
+};
+
