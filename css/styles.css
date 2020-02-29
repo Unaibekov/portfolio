@@ -5,6 +5,18 @@ body {
   font-family: "Rubik";
 }
 
+body::-webkit-scrollbar-track {
+  background-color: #0f0a42;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #e42c64;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1029,6 +1041,16 @@ a {
 .m-p-g__alertBox h2 {
   color: red;
 }
+
+
+
+/* SCROLL*/
+
+
+
+
+
+
 
 @media (max-width: 575.98px) {
   .main {
