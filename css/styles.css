@@ -1057,7 +1057,7 @@ a {
     flex-direction: column;
   }
   .item {
-    width: 190px;
+    width: 100%;
   }
 }
 
