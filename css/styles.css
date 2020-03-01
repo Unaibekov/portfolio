@@ -207,7 +207,6 @@ a {
 
 .about-block>div {
   margin-left: 30px;
-  margin-bottom: 70px;
 }
 
 .title {
@@ -218,6 +217,7 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   line-height: 1.1;
+  margin-top: 60px;
 }
 
 .subtitle {
@@ -233,6 +233,28 @@ a {
   height: 3px;
   width: 60px;
   background: #e42c64;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.phone img,
+.email img {
+  height: 30px;
+  margin-right: 10px;
 }
 
 .button {
@@ -1108,9 +1130,14 @@ a {
   }
   .photo-block {
     width: 100%;
+    height: 30%;
+  }
+  .about-block {
+    display: block;
+    height: 70%;
   }
   .photo-bg {
-    height: 270px;
+    height: 100%;
     width: 100%;
     right: 0px;
     top: 0px;
@@ -1118,9 +1145,11 @@ a {
   .my-photo {
     right: 0;
     top: 23px;
+    height: 100%;
   }
   .about-block {
     width: 100%;
+    height: 40%;
   }
   .title {
     font-size: 35px;
@@ -1144,6 +1173,9 @@ a {
   }
   .brand-info-title {
     font-size: 20px;
+  }
+  .contacts {
+    flex-direction: column;
   }
 }
 
